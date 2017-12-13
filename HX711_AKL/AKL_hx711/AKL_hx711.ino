@@ -4,7 +4,6 @@
 /*******************************************************
 
 This program will output data from HX711 modular and addition of set to Zero is added.
-Dominic Ricchio, Dec 2017
 
 ********************************************************/
 

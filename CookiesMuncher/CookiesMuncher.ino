@@ -8,7 +8,6 @@ This program will test the output from HX711.
 
 A2 = SCK (Black)
 A3 = DT (White)
-Dominic Ricchio, November 2017
 
 ********************************************************/
 

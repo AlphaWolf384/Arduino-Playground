@@ -5,7 +5,6 @@
 /*******************************************************
 
 This program will test the stepper motor direction and speed.
-Dominic Ricchio, November 2017
 
 ********************************************************/
 

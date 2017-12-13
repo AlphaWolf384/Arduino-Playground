@@ -2,13 +2,6 @@
 #include <LiquidCrystal.h>
 #include <Stepper.h>
 
-/*******************************************************
-
-This program will test the stepper motor direction and speed.
-Dominic Ricchio, November 2017
-
-********************************************************/
-
 int STEPS = 1000;
 
 int lcd_key     = 0;

@@ -12,16 +12,11 @@ Fault and Enable can be used for safety feature.
 
 Features
 --------
-
-- DarkArduinoTheme
-- Library
-- Saves
-
--> AKL
--> CookiesMuncher
--> DrumTest
--> HX711_AKL
--> LCDKeypadTest
+- AKL
+- CookiesMuncher
+- DrumTest
+- HX711_AKL
+- LCDKeypadTest
 
 Installation
 ------------

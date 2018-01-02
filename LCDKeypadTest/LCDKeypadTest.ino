@@ -65,28 +65,28 @@ void loop()
  {
    case btnRIGHT:
      {
-     lcd.print("Clockwise ");
+     lcd.print("Clockwise "); // Change direction to Clockwise
      myStepper.setSpeed(SPEED);
      myStepper.step(STEPS);
      break;
      }
    case btnLEFT:
      {
-     lcd.print("C-Clockwise   ");
+     lcd.print("C-Clockwise   "); // Change direction to Counter-Clockwise
      myStepper.setSpeed(SPEED);
      myStepper.step(-STEPS);
      break;
      }
    case btnUP:
      {
-     lcd.print("Speed++10    ");
+     lcd.print("Speed++10    "); // Increases Speeds by 10
      SPEED = SPEED + 10;
      delay(200);
      break;
      }
    case btnDOWN:
      {
-     lcd.print("Speed--10  ");
+     lcd.print("Speed--10  "); // Decreases Speed by 10
      SPEED = SPEED - 10;
      delay(200);
      break;
@@ -96,7 +96,7 @@ void loop()
      lcd.print("SELECT");
      break;
      }
-     case btnNONE:
+    case btnNONE:
      {
      lcd.print("      NONE      ");
      break;

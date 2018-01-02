@@ -7,8 +7,8 @@ int STEPS = 1000;
 int lcd_key     = 0;
 int adc_key_in  = 0;
 int SPEED = 150;        // 150 RPM for default setting
-int directionCYCLE = 0;        // Right direction for default
-int CYCLE = 50;        // 50 Cycles
+int directionCYCLE = 0;        // TODO: Right direction for default
+int CYCLE = 50;        // 50 Cycles per One Button activated
 #define btnRIGHT  0
 #define btnUP     1
 #define btnDOWN   2
@@ -22,7 +22,7 @@ Stepper myStepper(STEPS, 10, 11, 12, 13);
 int read_LCD_buttons()
 {
  adc_key_in = analogRead(0);      // read the value from the sensor 
- if (adc_key_in > 1000) return btnNONE; // We make this the 1st option for speed reasons since it will be the most likely result
+ if (adc_key_in > 1000) return btnNONE; // Neutral Mode to keep running same as btnNONE code indicated
  
  if (adc_key_in < 50)   return btnRIGHT;  
  if (adc_key_in < 195)  return btnUP; 
@@ -48,7 +48,7 @@ void loop(){
   btnControl();   // Control Stepper motor
 }
 
-void setupDisplay(){
+void setupDisplay(){ // Display Info loops by less than a second
  lcd.setCursor(0,0);            
  lcd.print(millis()/1000);  
  lcd.print("|");

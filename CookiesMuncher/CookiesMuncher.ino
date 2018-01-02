@@ -4,7 +4,7 @@
 
 /*******************************************************
 
-This program will test the output from HX711.
+This program will test the output from HX711 (Green Board).
 
 A2 = SCK (Black)
 A3 = DT (White)
